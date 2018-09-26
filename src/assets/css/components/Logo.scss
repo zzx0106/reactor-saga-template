@@ -1,0 +1,19 @@
+@import 'assets/css/public/index.scss';
+.logo-box {
+    .logo {
+        background: url('../../images/logo.png');
+        animation: rotate 24s infinite linear;
+        background-size: 100%;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate3d(0, 0, 1, 0);
+        }
+        100% {
+            transform: rotate3d(0, 0, 1, 360deg);
+        }
+    }
+}

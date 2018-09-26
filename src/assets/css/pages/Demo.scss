@@ -1,0 +1,96 @@
+@import '../public/index.scss';
+html,
+body {
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.demo-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        height: 30px;
+        width: 150px;
+        img {
+            position: absolute;
+            height: 65px;
+        }
+    }
+    .btn {
+        padding: 10px 15px;
+        line-height: 0.2;
+        color: #fff;
+        box-sizing: border-box;
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 14px;
+        border-radius: 2px;
+        transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
+    }
+    .btn-success {
+        @extend .btn;
+        background-color: #19be6b;
+        border-color: #19be6b;
+        &:hover {
+            color: #fff;
+            background-color: #47cb89;
+            border-color: #47cb89;
+        }
+    }
+    .btn-primary {
+        @extend .btn;
+        color: #fff;
+        background-color: #2d8cf0;
+        border-color: #2d8cf0;
+        &:hover {
+            background-color: #57a3f3;
+            border-color: #57a3f3;
+        }
+    }
+    .btn-info {
+        @extend .btn;
+        color: #fff;
+        background-color: #2db7f5;
+        border-color: #2db7f5;
+        &:hover {
+            background-color: #57c5f7;
+            border-color: #57c5f7;
+        }
+    }
+    .icon {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        .icon-img {
+            width: 64px;
+            height: 64px;
+            margin-top: (100px - 64px) / 2; // animation: rotate 3s linear;
+        }
+    }
+}

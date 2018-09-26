@@ -1,0 +1,29 @@
+@import '../public/index.scss';
+html,
+body {
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.home-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .home-link {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .router-title {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+    }
+}
