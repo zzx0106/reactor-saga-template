@@ -10,7 +10,7 @@
 - 内置css自动添加兼容头部
 - 内置build监控
 - 内置路由懒加载
-- 内置最组件懒加载
+- 内置组件懒加载
 - 内置babel-polifill
 
 ### how to use
