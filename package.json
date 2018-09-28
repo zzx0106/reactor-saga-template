@@ -1,7 +1,7 @@
 {
-  "name": "reactor-template",
+  "name": "reactor-saga-template",
   "version": "1.0.0",
-  "description": "reactor template",
+  "description": "reactor saga template",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./config/webpack.prod.js --color --progress",
@@ -11,7 +11,8 @@
   "license": "ISC",
   "keywords": [
     "reactor",
-    "react"
+    "react",
+    "redux-saga"
   ],
   "devDependencies": {
     "babel-core": "^6.26.3",
