@@ -106,6 +106,7 @@ const commonConfig = {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor'
         }),
+        // manifest就是抽取vendor里面经常变动的部分(比如异步加载js模块等部分)，避免每次打包都会让vendor的hash变动，从而避免加载新的vendor。
         new webpack.optimize.CommonsChunkPlugin({
             name: 'manifest',
             minChunks: Infinity
